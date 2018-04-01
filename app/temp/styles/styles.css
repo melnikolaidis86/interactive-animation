@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 /* General Styles */
 * {
     margin: 0;
@@ -20,6 +21,14 @@ a {
 a:hover {
         opacity: 1;
     }
+hr {
+    width: 250px;
+    height: 3px;
+    background-color: #3f51b5;
+    border: 0;
+    margin-bottom: 50px;
+}
+/* Keyframes To Control The Animation */
 @-webkit-keyframes fadein {
     100% {
         opacity: 1;
@@ -59,7 +68,11 @@ section {
     flex-direction: column;
     align-items: center;
     padding: 100px 80px;
+    width: 100%;
 }
+section:not(.hero):nth-child(even) {
+        background-color: #f5f5f5;
+    }
 .btn {
     border-radius: 4px;
     text-transform: uppercase;
@@ -71,6 +84,7 @@ section {
 .btn__normal {
         padding: 20px 46px;
     }
+/* Header Logo Rules */
 .header-logo {
     font-family: "Quicksand", sans-serif;
 }
@@ -115,4 +129,63 @@ section {
 .hero--content--subtitle {
             font: normal 28px "Open Sans", sans-serif;
             margin-bottom: 40px;
+        }
+/* Block Sections Rules */
+.block--title {
+        text-transform: uppercase;
+        font: bold 32ox "Open Sans", sans-serif;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+.block--description {
+        max-width: 775px;
+        line-height: 2;
+        padding: 0 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+/* Image Grid For Destinations Section */
+.img-grid {
+
+    width: 100%;
+}
+.img-grid--list-group {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+.img-grid--list-item {
+        height: 350px;
+        padding: 20px;
+        background-clip: content-box;
+        background-size: cover;
+        background-position: center;
+    }
+.img-grid--list-item__small {
+            flex-basis: 30%;
+        }
+.img-grid--list-item__large {
+            flex-basis: 70%;
+        }
+.icon-grid {
+    width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+.icon-grid--icon {
+        padding: 50px;
+        flex-basis: 50%;
+        text-align: center;
+    }
+.icon-grid--icon i {
+            color: #8c9eff;
+        }
+.icon-grid--icon--title {
+            font-size: 30px;
+            margin: 25px 0;
         }

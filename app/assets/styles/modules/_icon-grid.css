@@ -1,0 +1,22 @@
+.icon-grid {
+    width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    
+    &--icon {
+        padding: 50px;
+        flex-basis: 50%;
+        text-align: center;
+
+        & i {
+            color: #8c9eff;
+        }
+
+        &--title {
+            font-size: 30px;
+            margin: 25px 0;
+        }
+    }
+}

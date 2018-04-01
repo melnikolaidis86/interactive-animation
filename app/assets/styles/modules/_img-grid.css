@@ -1,0 +1,31 @@
+/* Image Grid For Destinations Section */
+
+.img-grid {
+
+    width: 100%;
+
+    &--list-group {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    &--list-item {
+        height: 350px;
+        padding: 20px;
+        background-clip: content-box;
+        background-size: cover;
+        background-position: center;
+
+        &__small {
+            flex-basis: 30%;
+        }
+
+        &__large {
+            flex-basis: 70%;
+        }
+    }
+}

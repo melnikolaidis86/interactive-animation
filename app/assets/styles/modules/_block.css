@@ -1,0 +1,19 @@
+/* Block Sections Rules */
+
+.block {
+    
+    &--title {
+        text-transform: uppercase;
+        font: bold 32ox "Open Sans", sans-serif;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &--description {
+        max-width: 775px;
+        line-height: 2;
+        padding: 0 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
