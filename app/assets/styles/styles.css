@@ -3,6 +3,7 @@
 @import 'base/_animations';
 @import 'layout/_header';
 @import 'layout/_section';
+@import 'layout/_footer';
 @import 'modules/_btn';
 @import 'modules/_header-logo';
 @import 'modules/_main-navigation';
@@ -10,3 +11,5 @@
 @import 'modules/_block';
 @import 'modules/_img-grid';
 @import 'modules/_icon-grid';
+@import 'modules/_testimonials';
+@import 'modules/_contact-form';
