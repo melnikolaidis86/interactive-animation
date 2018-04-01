@@ -1,0 +1,118 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font: normal 16px sans-serif;
+    color: #555;
+}
+a {
+    text-decoration: none;
+    opacity: .75;
+    color: #fff;
+}
+a:hover {
+        opacity: 1;
+    }
+@-webkit-keyframes fadein {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes slidefade {
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
+}
+@keyframes slidefade {
+    100% {
+        opacity: 1;
+        margin: 0;
+    }
+}
+/* Header Styles */
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px 0;
+    -webkit-animation: 1s fadein .5s forwards;
+            animation: 1s fadein .5s forwards;
+    opacity: 0;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 80px;
+}
+.btn {
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3fb1b5;
+    opacity: 1;
+}
+.btn__normal {
+        padding: 20px 46px;
+    }
+.header-logo {
+    font-family: "Quicksand", sans-serif;
+}
+.main-navigation {
+    list-style-type: none;
+    display: flex;
+    margin-right: -15px;
+}
+.main-navigation--item {
+        margin: 0 15px;
+    }
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    color: #fff;
+}
+.hero--bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        z-index: -1;
+        background-color: #80a3db;
+    }
+.hero--content{
+
+        opacity: 0;
+        margin-top: 100px;
+        -webkit-animation: 1s slidefade 1s forwards;
+                animation: 1s slidefade 1s forwards;
+
+    }
+.hero--content--title {
+            font: bold 60px "Open Sans", sans-serif;
+            margin-bottom: 15px;
+        }
+.hero--content--subtitle {
+            font: normal 28px "Open Sans", sans-serif;
+            margin-bottom: 40px;
+        }

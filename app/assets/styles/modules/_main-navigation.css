@@ -1,0 +1,9 @@
+.main-navigation {
+    list-style-type: none;
+    display: flex;
+    margin-right: -15px;
+
+    &--item {
+        margin: 0 15px;
+    }
+}

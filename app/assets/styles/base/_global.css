@@ -1,0 +1,25 @@
+/* General Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 16px sans-serif;
+    color: $main-font-color;
+}
+
+a {
+    text-decoration: none;
+    opacity: .75;
+    color: #fff;
+
+    &:hover {
+        opacity: 1;
+    }
+}
