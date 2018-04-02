@@ -27,12 +27,24 @@
         &--title {
             font: bold 60px "Open Sans", sans-serif;
             margin-bottom: 15px;
+            
+            @mixin atMedium {
+                font-size: 48px;
+            }
         }
 
         &--subtitle {
             font: normal 28px "Open Sans", sans-serif;
             margin-bottom: 40px;
+            
+            @mixin atMedium {
+                font-size: 24px;
+            }
         }
 
+    }
+    
+    @mixin atMedium {
+        min-height: 600px;
     }
 }

@@ -20,5 +20,9 @@
             font-size: 30px;
             margin: 25px 0;
         }
+        
+        @mixin atMedium {
+            flex-basis: 100%;
+        }
     }
 }

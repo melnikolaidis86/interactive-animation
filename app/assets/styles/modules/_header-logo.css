@@ -2,4 +2,8 @@
 
 .header-logo {
     font-family: "Quicksand", sans-serif;
+    
+    @mixin atMedium {
+        margin-bottom: 15px;
+    }
 }

@@ -64,6 +64,12 @@ header {
             animation: 1s fadein .5s forwards;
     opacity: 0;
 }
+@media screen and (max-width: 800px) {
+header {
+        padding: 20px 50px;
+		flex-direction: column
+}
+    }
 section {
     display: flex;
     flex-direction: column;
@@ -72,6 +78,11 @@ section {
 }
 section:not(.hero):nth-child(even) {
         background-color: #f5f5f5;
+    }
+@media screen and (max-width: 800px) {
+section {
+        padding: 50px 20px
+}
     }
 /* Footer Rules */
 footer {
@@ -88,13 +99,29 @@ footer .footer-description {
         opacity: 0.6;
         align-self: center;
     }
+@media screen and (max-width: 1100px) {
+footer .footer-description {
+            text-align: center;
+		    margin-bottom: 20px
+    }
+    }
 footer .social-icons {
         list-style-type: none;
         display: flex;
     }
 footer .social-icons--icon {
-            margin-left: 16px; 
+            margin-left: 16px;
         }
+@media screen and (max-width: 1100px) {
+footer .social-icons--icon {
+                margin: 0 8px
+        }
+    }
+@media screen and (max-width: 1100px) {
+footer {
+        flex-direction: column
+}
+    }
 .btn {
     border-radius: 4px;
     text-transform: uppercase;
@@ -106,10 +133,20 @@ footer .social-icons--icon {
 .btn__normal {
         padding: 20px 46px;
     }
+@media screen and (max-width: 800px) {
+.btn__normal {
+            padding: 15px 40px
+    }
+    }
 /* Header Logo Rules */
 .header-logo {
     font-family: "Quicksand", sans-serif;
 }
+@media screen and (max-width: 800px) {
+.header-logo {
+        margin-bottom: 15px
+}
+    }
 .main-navigation {
     list-style-type: none;
     display: flex;
@@ -148,10 +185,25 @@ footer .social-icons--icon {
             font: bold 60px "Open Sans", sans-serif;
             margin-bottom: 15px;
         }
+@media screen and (max-width: 800px) {
+.hero--content--title {
+                font-size: 48px
+        }
+    }
 .hero--content--subtitle {
             font: normal 28px "Open Sans", sans-serif;
             margin-bottom: 40px;
         }
+@media screen and (max-width: 800px) {
+.hero--content--subtitle {
+                font-size: 24px
+        }
+    }
+@media screen and (max-width: 800px) {
+.hero {
+        min-height: 600px
+}
+    }
 /* Block Sections Rules */
 .block--title {
         text-transform: uppercase;
@@ -187,11 +239,31 @@ footer .social-icons--icon {
         background-position: center;
     }
 .img-grid--list-item__small {
-            flex-basis: 30%;
+            flex-basis: 40%;
         }
+@media screen and (max-width: 1100px) {
+.img-grid--list-item__small {
+               flex-basis: 50%
+        }
+    }
+@media screen and (max-width: 800px) {
+.img-grid--list-item__small {
+               flex-basis: 100%
+        }
+    }
 .img-grid--list-item__large {
-            flex-basis: 70%;
+            flex-basis: 60%;
         }
+@media screen and (max-width: 1100px) {
+.img-grid--list-item__large {
+               flex-basis: 50%
+        }
+    }
+@media screen and (max-width: 800px) {
+.img-grid--list-item__large {
+               flex-basis: 100%
+        }
+    }
 /* Icon Grid Rules */
 .icon-grid {
     width: 100%;
@@ -212,6 +284,11 @@ footer .social-icons--icon {
             font-size: 30px;
             margin: 25px 0;
         }
+@media screen and (max-width: 800px) {
+.icon-grid--icon {
+            flex-basis: 100%
+    }
+    }
 /* Testimonials Rules */
 .testimonials {
 
@@ -221,10 +298,21 @@ footer .social-icons--icon {
         font-size: 22px;
         font-weight: 300;
         line-height: 1.5;
-        margin: 40px 0 25px; 
+        margin: 40px 0 25px;
+    }
+@media screen and (max-width: 800px) {
+.testimonials--quote {
+            font-size: 18px;
+		    margin: 15px 0
+    }
     }
 .testimonials--author {
         text-align: center;
+    }
+@media screen and (max-width: 800px) {
+.testimonials--author {
+            font-size: 14px
+    }
     }
 /* Contact Form Rules */
 .contact-form {
@@ -244,4 +332,10 @@ footer .social-icons--icon {
         font-size: 18px;
         color: #555;
         flex: 1;
+    }
+@media screen and (max-width: 800px) {
+.contact-form input {
+            flex-basis: 100%;
+            margin: 0 0 20px 0
+    }
     }

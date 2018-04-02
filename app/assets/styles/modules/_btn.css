@@ -8,5 +8,9 @@
 
     &__normal {
         padding: 20px 46px;
+        
+        @mixin atMedium {
+            padding: 15px 40px;
+        }
     }
 }

@@ -21,11 +21,27 @@
         background-position: center;
 
         &__small {
-            flex-basis: 30%;
+            flex-basis: 40%;
+            
+            @mixin atLarge {
+               flex-basis: 50%; 
+            }
+            
+            @mixin atMedium {
+               flex-basis: 100%;  
+            }
         }
 
         &__large {
-            flex-basis: 70%;
+            flex-basis: 60%;
+            
+            @mixin atLarge {
+               flex-basis: 50%; 
+            }
+            
+            @mixin atMedium {
+               flex-basis: 100%;  
+            }
         }
     }
 }

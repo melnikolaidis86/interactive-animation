@@ -8,10 +8,19 @@
         font-size: 22px;
         font-weight: 300;
         line-height: 1.5;
-        margin: 40px 0 25px; 
+        margin: 40px 0 25px;
+        
+        @mixin atMedium {
+            font-size: 18px;
+		    margin: 15px 0;
+        }
     }
 
     &--author {
         text-align: center;
+        
+        @mixin atMedium {
+            font-size: 14px;
+        }
     }
 }

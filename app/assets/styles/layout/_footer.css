@@ -13,6 +13,11 @@ footer {
         font-size: 14px;
         opacity: 0.6;
         align-self: center;
+        
+        @mixin atLarge {
+            text-align: center;
+		    margin-bottom: 20px;
+        }
     }
 
     & .social-icons {
@@ -20,7 +25,15 @@ footer {
         display: flex;
 
         &--icon {
-            margin-left: 16px; 
+            margin-left: 16px;
+            
+            @mixin atLarge {
+                margin: 0 8px;
+            }
         }
+    }
+    
+    @mixin atLarge {
+        flex-direction: column;
     }
 }
