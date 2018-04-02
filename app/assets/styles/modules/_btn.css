@@ -1,10 +1,32 @@
 .btn {
-    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background: #ad5389;
+    background: linear-gradient(to bottom, #ad5389, #3c1053);
+    width: 350px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
     text-transform: uppercase;
-    font-weight: bold;
     text-align: center;
-    background-color: $main-btn-color;
+    letter-spacing: 2px;
+    box-shadow: 0 6px #191970;
+    border-radius: 20px;
     opacity: 1;
+    
+    &:hover {
+        box-shadow: 0 4px #191970;
+	    top: 2px;
+    }
+    
+    &:active {
+        box-shadow: 0 0 #191970;
+	    top: 6px;
+    }
 
     &__normal {
         padding: 20px 46px;

@@ -24,7 +24,7 @@ a:hover {
 hr {
     width: 250px;
     height: 3px;
-    background-color: #3f51b5;
+    background-color: #3c1053;
     border: 0;
     margin-bottom: 50px;
 }
@@ -89,7 +89,7 @@ footer {
     display: flex;
 	align-items: center;
 	justify-content: space-around;
-	background-color: #607d8b;
+	background-color: #ad5389;
 	color: #fff;
     padding: 20px 0;
 }
@@ -123,13 +123,33 @@ footer {
 }
     }
 .btn {
-    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background: #ad5389;
+    background: linear-gradient(to bottom, #ad5389, #3c1053);
+    width: 350px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
     text-transform: uppercase;
-    font-weight: bold;
     text-align: center;
-    background-color: #8c9eff;
+    letter-spacing: 2px;
+    box-shadow: 0 6px #191970;
+    border-radius: 20px;
     opacity: 1;
 }
+.btn:hover {
+        box-shadow: 0 4px #191970;
+	    top: 2px;
+    }
+.btn:active {
+        box-shadow: 0 0 #191970;
+	    top: 6px;
+    }
 .btn__normal {
         padding: 20px 46px;
     }
@@ -278,7 +298,7 @@ footer {
         text-align: center;
     }
 .icon-grid--icon i {
-            color: #8c9eff;
+            color: #ad5389;
         }
 .icon-grid--icon--title {
             font-size: 30px;
