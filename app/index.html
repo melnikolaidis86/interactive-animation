@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mountain Travel</title>
   <link rel="stylesheet" href="./temp/styles/styles.css">
+
 </head>
 <body>
     <header>
@@ -35,12 +36,21 @@
         <hr>
 
         <div class="img-grid">
-            <ul class="img-grid--list-group">
-                <li class="img-grid--list-item img-grid--list-item__small" style="background-image: url('./assets/img/mountain1.jpg')"></li>
-                <li class="img-grid--list-item img-grid--list-item__large" style="background-image: url('./assets/img/mountain2.jpg')"></li>
-                <li class="img-grid--list-item img-grid--list-item__large" style="background-image: url('./assets/img/mountain3.jpg')"></li>
-                <li class="img-grid--list-item img-grid--list-item__small" style="background-image: url('./assets/img/mountain4.jpg')"></li>
-            </ul>
+            <div class="img-grid--list-group">
+                <div class="img-grid--list-item img-grid--list-item__small">
+                    <div class="img-grid--list-item--face">
+                        <div class="img-grid--list-item--face img-grid--list-item--face__front">
+                            <img src="./assets/img/mountain1.jpg" alt="">
+                        </div>
+                        <div class="img-grid--list-item--face img-grid--list-item--face__back">
+                            <p>Demo</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="img-grid--list-item img-grid--list-item__large" style="background-image: url('./assets/img/mountain2.jpg')"></div>
+                <div class="img-grid--list-item img-grid--list-item__large" style="background-image: url('./assets/img/mountain3.jpg')"></div>
+                <div class="img-grid--list-item img-grid--list-item__small" style="background-image: url('./assets/img/mountain4.jpg')"></div>
+            </div>
         </div>
     </section>
 
