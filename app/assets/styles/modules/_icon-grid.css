@@ -18,7 +18,7 @@
         }
 
         &:hover .icon-grid--icon__animated__compass{
-            animation: rotateRight 2s infinite ease-in;
+            animation: rotateRight 2s .3s infinite ease-in;
         }
 
         &__animated__compass {
@@ -26,7 +26,23 @@
         }
 
         &:hover .icon-grid--icon__animated__photo {
-            animation: scaleItem 2s infinite ease-in;
+            animation: scaleItem 2s .3s infinite ease-in;
+        }
+
+        &__animated__bicycle {
+            transform-origin: 50% 50%;
+        }
+
+        &:hover .icon-grid--icon__animated__bicycle {
+            animation: moveRight 2s .3s infinite ease-in;
+        }
+
+        &__animated__flag {
+            transform-origin: 50% 50%;
+        }
+
+        &:hover .icon-grid--icon__animated__flag {
+            animation: wave 2s .3s infinite ease-in;
         }
 
         &__animated__photo {
@@ -37,6 +53,8 @@
             font-size: 30px;
             margin: 25px 0;
         }
+
+
         
         @mixin atMedium {
             flex-basis: 100%;
