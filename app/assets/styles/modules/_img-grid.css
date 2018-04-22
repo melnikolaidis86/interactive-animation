@@ -23,26 +23,31 @@
         transform-style: preserve-3d;
 
         & img {
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
         }
 
         &--face {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 2%;
+            left: 2%;
+            width: 98%;
+            height: 98%;
             backface-visibility: hidden;
             background-clip: content-box;
             background-size: cover;
             background-position: center;
+            transition: transform 0.5s ease-in-out;
 
             &__front {
-                transform: rotateY(0); 
+                box-shadow: 0 8px 6px -6px #000;
+                transform: rotateY(0);
             }
 
             &__back {
-
+                background: #2c3e50;
+                box-shadow: 0 8px 6px -6px #000;
+                transform: rotateY(180deg);
             }
         }
 
