@@ -12,8 +12,25 @@
         flex-basis: 50%;
         text-align: center;
 
-        & i {
-            color: #ad5389;
+        & svg {
+            fill: #ad5389;
+            width: 78px;
+        }
+
+        &:hover .icon-grid--icon__animated__compass{
+            animation: rotateRight 2s infinite ease-in;
+        }
+
+        &__animated__compass {
+            transform-origin: 50% 55%;
+        }
+
+        &:hover .icon-grid--icon__animated__photo {
+            animation: scaleItem 2s infinite ease-in;
+        }
+
+        &__animated__photo {
+            transform-origin: 50% 50%;
         }
 
         &--title {

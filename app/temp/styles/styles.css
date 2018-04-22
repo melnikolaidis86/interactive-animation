@@ -51,6 +51,72 @@ hr {
         margin: 0;
     }
 }
+@-webkit-keyframes rotateRight {
+    0% {
+        -webkit-transform: rotateZ(0);
+                transform: rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: rotateZ(30deg);
+                transform: rotateZ(30deg);
+    }
+
+    100% {
+        -webkit-transform: rotateZ(0);
+                transform: rotateZ(0); 
+    }
+}
+@keyframes rotateRight {
+    0% {
+        -webkit-transform: rotateZ(0);
+                transform: rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: rotateZ(30deg);
+                transform: rotateZ(30deg);
+    }
+
+    100% {
+        -webkit-transform: rotateZ(0);
+                transform: rotateZ(0); 
+    }
+}
+@-webkit-keyframes scaleItem {
+
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(.85);
+                transform: scale(.85);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+@keyframes scaleItem {
+
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(.85);
+                transform: scale(.85);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
 /* Header Styles */
 header {
     position: absolute;
@@ -277,9 +343,9 @@ footer {
             background-clip: content-box;
             background-size: cover;
             background-position: center;
-            transition: -webkit-transform 0.5s ease-in-out;
-            transition: transform 0.5s ease-in-out;
-            transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+            transition: -webkit-transform 0.5s .3s ease-in-out;
+            transition: transform 0.5s .3s ease-in-out;
+            transition: transform 0.5s .3s ease-in-out, -webkit-transform 0.5s .3s ease-in-out;
         }
 .img-grid--list-item--face__front {
                 box-shadow: 0 8px 6px -6px #000;
@@ -331,8 +397,25 @@ footer {
         flex-basis: 50%;
         text-align: center;
     }
-.icon-grid--icon i {
-            color: #ad5389;
+.icon-grid--icon svg {
+            fill: #ad5389;
+            width: 78px;
+        }
+.icon-grid--icon:hover .icon-grid--icon__animated__compass{
+            -webkit-animation: rotateRight 2s infinite ease-in;
+                    animation: rotateRight 2s infinite ease-in;
+        }
+.icon-grid--icon__animated__compass {
+            -webkit-transform-origin: 50% 55%;
+                    transform-origin: 50% 55%;
+        }
+.icon-grid--icon:hover .icon-grid--icon__animated__photo {
+            -webkit-animation: scaleItem 2s infinite ease-in;
+                    animation: scaleItem 2s infinite ease-in;
+        }
+.icon-grid--icon__animated__photo {
+            -webkit-transform-origin: 50% 50%;
+                    transform-origin: 50% 50%;
         }
 .icon-grid--icon--title {
             font-size: 30px;

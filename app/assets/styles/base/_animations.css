@@ -12,3 +12,32 @@
         margin: 0;
     }
 }
+
+@keyframes rotateRight {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    50% {
+        transform: rotateZ(30deg);
+    }
+
+    100% {
+        transform: rotateZ(0); 
+    }
+}
+
+@keyframes scaleItem {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.85);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
