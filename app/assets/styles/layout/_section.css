@@ -5,7 +5,7 @@ section {
     padding: 100px 80px;
 
     &:not(.hero):nth-child(even) {
-        background-color: #f5f5f5;
+        background-color: $secondary-bg-color;
     }
     
     @mixin atMedium {
