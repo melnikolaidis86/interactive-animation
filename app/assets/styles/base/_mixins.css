@@ -1,3 +1,5 @@
+/* Mixins to control the media queries for responsive design */
+
 @define-mixin atLarge {
     @media screen and (max-width: 1100px) {
         @mixin-content;

@@ -6,4 +6,32 @@
     @mixin atMedium {
         margin-bottom: 15px;
     }
+
+    &__animated-left {
+        animation: animate-to-right .5s .3s ease-in;
+    }
+
+    &__animated-right {
+        animation: animate-to-left .5s .3s ease-in;
+    }
+
+    &__animated-fade {
+        opacity: 0;
+        animation: 1s slidefade 1s forwards;
+    }
+}
+
+/* Keyframes to control the logo animation */
+@keyframes animate-to-right {
+
+    0% {opacity: 0; transform: translateX(-15px);}
+
+    100% {transform: translateX(0); opacity: 1;}
+}
+
+@keyframes animate-to-left {
+
+    0% {opacity: 0; transform: translateX(15px);}
+
+    100% {transform: translateX(0); opacity: 1;}
 }

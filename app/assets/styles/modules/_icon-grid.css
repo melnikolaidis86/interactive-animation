@@ -17,6 +17,8 @@
             width: 78px;
         }
 
+        /* Animations on icons */
+
         &:hover .icon-grid--icon__animated__compass{
             animation: rotateRight 2s .3s infinite ease-in;
         }
