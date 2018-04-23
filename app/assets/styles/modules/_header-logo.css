@@ -1,7 +1,7 @@
 /* Header Logo Rules */
 
 .header-logo {
-    font-family: "Quicksand", sans-serif;
+    width: 200px;
     
     @mixin atMedium {
         margin-bottom: 15px;

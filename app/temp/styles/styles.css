@@ -146,9 +146,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 35px 100px 0;
-    -webkit-animation: 1s fadein .5s forwards;
-            animation: 1s fadein .5s forwards;
-    opacity: 0;
 }
 @media screen and (max-width: 800px) {
 header {
@@ -246,7 +243,7 @@ footer {
     }
 /* Header Logo Rules */
 .header-logo {
-    font-family: "Quicksand", sans-serif;
+    width: 200px;
 }
 @media screen and (max-width: 800px) {
 .header-logo {
@@ -257,7 +254,17 @@ footer {
     list-style-type: none;
     display: flex;
     margin-right: -15px;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
 }
+@media screen and (max-width: 800px) {
+.main-navigation {
+
+        -webkit-transform: translateY(0);
+
+                transform: translateY(0)
+}
+    }
 .main-navigation--item {
         margin: 0 15px;
     }
